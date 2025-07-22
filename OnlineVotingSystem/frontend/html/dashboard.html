@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Online Voting System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex flex-col">
+        <nav class="bg-blue-600 text-white p-4 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-2xl font-bold">Online Voting System</h1>
+                <div class="space-x-4">
+                    <a href="logout.html" class="hover:underline">Logout</a>
+                </div>
+            </div>
+        </nav>
+        
+        <main class="flex-grow container mx-auto p-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Welcome, User!</h2>
+            <p class="text-gray-600 mb-6">You can now cast your vote or view results.</p>
+            <div class="space-y-4">
+                <a href="vote.html" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2 px-4 rounded-lg transition duration-300">Vote Now</a>
+                <a href="results.html" class="block w-full bg-white border border-blue-600 text-blue-600 hover:bg-blue-50 text-center py-2 px-4 rounded-lg transition duration-300">View Results</a>
+            </div>
+        </main>
+
+        <footer class="bg-gray-800 text-white py-4">
+            <div class="container mx-auto text-center">
+                <p>© 2023 Online Voting System. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

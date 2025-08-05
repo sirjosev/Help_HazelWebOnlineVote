@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
-const Candidate = sequelize.define('Candidate', {
+const Event = sequelize.define('Event', {
   id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,
@@ -11,14 +11,22 @@ const Candidate = sequelize.define('Candidate', {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  party: {
+  position: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  votes: {
-    type: DataTypes.INTEGER,
-    defaultValue: 0,
+  region: {
+    type: DataTypes.STRING,
+    allowNull: false, // e.g., "Nasional", "Jawa Barat"
+  },
+  startDate: {
+    type: DataTypes.DATE,
+    allowNull: false,
+  },
+  endDate: {
+    type: DataTypes.DATE,
+    allowNull: false,
   },
 });
 
-module.exports = Candidate;
+module.exports = Event;
